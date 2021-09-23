@@ -8,8 +8,8 @@ cvs.height = wHeight;
 
 var 
     cell = 5,
-    rows = 50,
-    columns = 50;
+    rows = 100,
+    columns = 100;
 var life = new Life(rows, columns);
 window.onload = function() {
     life.reviveRandomCells(rows*columns/8);

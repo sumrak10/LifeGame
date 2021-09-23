@@ -27,8 +27,8 @@ class Life {
         for (let y = 0; y < this.rows; y++) {
             const row = []
             let sunEnergy = 0;
-            if (y <= (this.rows/2)) {
-                sunEnergy = ( (this.rows/2) -  y) / (this.rows/2)*2;
+            if (y <= (this.rows)) {
+                sunEnergy = ( (this.rows) -  y) / (this.rows)*2;
             } else {
                 sunEnergy = 0;
             }
@@ -84,7 +84,7 @@ class Life {
                         this.setCell(x+1,y,0,true)
                     } else if (n == 2) {
                         this.setCell(x,y+1,3,0)
-                        this.setCell(x,y+1,2,col+(Math.floor(Math.random() * 50) -25 ) )
+                        this.setCell(x,y+1,2,col+(Math.floor(Math.random() * 5) -2.5 ) )
                         this.setCell(x,y+1,1,10)
                         this.setCell(x,y+1,0,true)
                     } else if (n == 3) {
